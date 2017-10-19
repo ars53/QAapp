@@ -23,8 +23,8 @@ Partial Class Welcome
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.dgvQuestions = New System.Windows.Forms.DataGridView()
         Me.LoadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.dgvQuestions = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgvQuestions, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -38,6 +38,12 @@ Partial Class Welcome
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
+        'LoadToolStripMenuItem
+        '
+        Me.LoadToolStripMenuItem.Name = "LoadToolStripMenuItem"
+        Me.LoadToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
+        Me.LoadToolStripMenuItem.Text = "Load"
+        '
         'dgvQuestions
         '
         Me.dgvQuestions.AllowUserToAddRows = False
@@ -48,12 +54,6 @@ Partial Class Welcome
         Me.dgvQuestions.ReadOnly = True
         Me.dgvQuestions.Size = New System.Drawing.Size(469, 407)
         Me.dgvQuestions.TabIndex = 1
-        '
-        'LoadToolStripMenuItem
-        '
-        Me.LoadToolStripMenuItem.Name = "LoadToolStripMenuItem"
-        Me.LoadToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
-        Me.LoadToolStripMenuItem.Text = "Load"
         '
         'Welcome
         '
